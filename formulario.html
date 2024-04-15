@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pesquisa de satisfação</h1>
+    </header>
+    <main>
+        <form action="paginaDestino.html" method="POST">
+            <section>
+                <h2>
+                    Informe seus dados:
+                </h2>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome">
+                </p>
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email">
+                </p>
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone">
+                </p> 
+            </section>
+            <section>
+                <h2>
+                    Como você avaliaria nosso serviço de atendimento ?
+               </h2>
+                <p>
+                    <input type="radio" name="satisfação" id="pessimo">
+                    <label for="pessimo">Pessimo</label>
+    
+                    <input type="radio" name="satisfação" id="ruim">
+                    <label for="ruim">Ruim</label>
+    
+                    <input type="radio" name="satisfação" id="regular">
+                    <label for="regular">Regular</label>
+    
+                    <input type="radio" name="satisfação" id="bom">
+                    <label for="bom">Bom</label>
+    
+                    <input type="radio" name="satisfação" id="excelente">  
+                    <label for="excelente">Excelente</label>  
+                </p>
+                <p>
+                    Seu problema foi resolvido ? 
+                    <select>
+                        <option>Sim</option>
+                        <option>Não</option>
+                    </select>
+                </p>
+                <p> 
+                    Numa escala de 1 a 5, qual a probabilidade de você nos recomendar a um conhecido ?
+                    <input type="radio" name="recomendar" id="1">
+                    <label for="1">1</label>
+                    <input type="radio" name="recomendar" id="2">
+                    <label for="2">2</label>
+                    <input type="radio" name="recomendar" id="3">
+                    <label for="3">3</label>
+                    <input type="radio" name="recomendar" id="4">
+                    <label for="4">4</label>
+                    <input type="radio" name="recomendar" id="5">
+                    <label for="5">5</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="termos">
+                    <label for="termos">Concordo em compartilhar minha resposta com terceiros.</label>
+                </p>
+            </section>
+            <input type="button" value="Enviar">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
