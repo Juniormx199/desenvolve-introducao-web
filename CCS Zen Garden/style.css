@@ -1,15 +1,17 @@
 /* Cores
-.Principal { color: #012030; }
-.Background { color: #13678A; }
-.cor1 { color: #45C4B0; }
-.cor2 { color: #9AEBA3; }
-.cor3 { color: #DAFDBA; }
- */
+.Crevasse-1-hex { color: #B4BEC9; }
+.Crevasse-2-hex { color: #159A9C; }
+.color { color: #002333; }
+.Background { color: #DEEFE7; }
+.Crevasse-5-hex { color: #FFFFFF; } */
+
+
+
 
 html{
-    background: #13678A ;
-    color: #9AEBA3 ;
-    font-size: 20px;
+    background: #DEEFE7 ;
+    color: #002333 ;
+    font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -43,4 +45,52 @@ h3{
 
 abbr{
     font-variant: small-caps;
+}
+
+.page-wrapper{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#zen-intro{
+    height: 550px;
+}
+
+#design-archives{
+    display: none;
+}
+
+#zen-intro header{
+    background-color: #159A9C;
+    color: #FFFFFF;
+}
+
+#zen-intro header h1, #zen-intro header h2{
+    display: inline-block;
+}
+
+#zen-intro header h1{
+    margin: 1em
+}
+
+
+aside ul{
+    list-style-type: none;
+}
+
+aside ul li{
+    text-align: center;
+    margin-top: 1em;
+}
+
+
+.main footer{
+    margin: 4%;  
+}
+
+.main footer a {
+    border: solid  2px #002333;
+    padding: 0.5em;
+    display: inline-block;
 }
