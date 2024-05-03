@@ -87,13 +87,18 @@ aside ul li{
 
 
 .main footer{
-    margin: 4%;  
+    margin: 4%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
 }
 
 .main footer a {
     border: solid  2px #002333;
     padding: 0.5em;
     display: inline-block;
+    flex-basis: 100px;
+    text-align: center;
 }
 
 .explanation{
@@ -101,6 +106,7 @@ aside ul li{
     margin-right: 35%;
     border-right: solid 1px #1f295c ;
     padding-right: 2%;
+    margin-bottom: 100px;
 }
 
 #design-selection{
@@ -110,3 +116,31 @@ aside ul li{
     padding: 0 2%;
 }
 
+#zen-benefits{
+    display: flex;
+    border-bottom: solid 1px #1f295c;
+}
+#zen-benefits h3{
+    order: 2;
+    align-self: center;
+    flex-basis: 30%;
+}
+#zen-benefits p{
+    flex-basis: 70%;
+}
+
+#zen-participation{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid 1px #1f295c;
+    border-top: solid 1px #1f295c;
+}
+
+#zen-participation h3{
+    flex-basis: 50%;
+    align-self: center;
+}
+
+#zen-participation p{
+    flex-basis: 50%;
+}
