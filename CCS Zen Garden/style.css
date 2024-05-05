@@ -109,11 +109,12 @@ aside ul li{
     margin-bottom: 100px;
 }
 
-#design-selection{
+.design-selection{
     position: absolute;
     top: 520px;
     left: 62%;
     padding: 0 2%;
+    width: 34% ;
 }
 
 #zen-benefits{
@@ -171,4 +172,51 @@ a:visited{
 .design-selection li:last-of-type{
     border-bottom: solid 1px #1f295c ;
     padding-bottom: 1em;
+}
+
+
+@media screen and (max-width: 768px) {
+    .design-selection{
+        position: static;
+        width: 100%;
+    }
+    
+    .explanation{
+        border-right: none;
+        width: 100%;
+    }
+
+    #zen-participation{
+        flex-direction: column;
+    }
+
+    #zen-intro{
+        height: auto;
+    }
+
+    p{
+        text-indent: 0px;
+    }
+
+}
+
+@media print{
+    html{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #zen-intro header{
+        background-color: #FFFFFF ;
+        color: #159A9C;
+    }
+
+    .design-selection{
+        position: static;
+        width: 100%;
+    }
+    
+    .explanation{
+        border-right: none;
+        width: 100%;
+    }
+
 }
