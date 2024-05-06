@@ -1,0 +1,81 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    width: 60%;
+    margin:  auto;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    padding: 20px;
+}
+
+img{
+    width: 180px;
+    border-radius: 100px;
+    border: solid black 2px;
+}
+
+.header_informacoes {
+    text-align: center;
+    margin-left:100px;
+}
+
+.header_informacoes p {
+    text-align: right;
+}
+
+footer{
+    background-color: beige;
+    padding: 30px 0 ;
+}
+
+footer section{
+    width: 60%;
+    margin: auto;
+}
+
+th{
+    display: flex;
+    justify-content: end;
+}
+
+td{
+    padding: 0 10px;   
+}
+
+main section{
+    margin-top: 50px;
+}
+
+main section:last-child{
+    margin-bottom: 50px;
+}
+
+section h2{
+    margin-bottom: 1em ;
+}
+
+.lista_educacao{
+    margin-left: 40px;
+}
+
+
+.lista_habilidades{
+    margin-left: 40px;
+}
+
+.secao_resumo p {
+    text-indent: 1em;
+    text-align: justify;
+}
