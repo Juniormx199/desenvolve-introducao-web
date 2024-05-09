@@ -9,24 +9,27 @@ body{
     margin: auto;
 }
 
-header img{
+.secao_dados > img{
     width: 150px;
     border: solid rgba(165, 42, 42, 0.377) 4px ;
     border-radius: 100px;
 }
+.container_dados img , .secao_redes img{
+    width: 20px;
+    padding-right: 10px;
+}
 
 header{
     border-left: brown solid 40px ;
-    margin-right: 70px;
-    padding: 0 20px;
+    margin-right: 40px;
+    padding: 0 10px;
     background-color: rgba(252, 99, 99, 0.103);
-    height: calc(100vh);
+    padding-bottom: calc(100vw - 100%);
 }
-
 
 header p {
     margin: 15px 0;
-    font-size: 0.8em;
+    font-size: 12px;
 }
 
 section{
@@ -53,23 +56,53 @@ h2{
 
 .secao_educacao th{
     text-align: start;
+
 }
+
+.secao_educacao td{
+    padding-bottom: 10px;
+}
+
 
 .secao_experiencia tr{
     display: flex;
 }
 
 .secao_experiencia th{
-    padding: 0 10px;
-}
-
-.secao_experiencia td{
-    text-align: justify;
+    padding-right : 30px;
 }
 
 .secao_habilidades ul{
-    padding-left: 50px;
+    padding-left: 30px;
 }
+
+.secao_dados{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_dados p {
+    display: flex;
+}
+
+.container_experiencia ul{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.secao_redes a {
+    display: flex;
+    margin-top: 10px;
+}
+
+.secao_redes {
+    border-top: solid rgba(0, 0, 0, 0.116) 2px;
+    margin-top: 30px;
+}
+
+
 
 @media all and (max-width: 768px){
     body{
@@ -79,18 +112,20 @@ h2{
     header{
         height: auto;
         margin-right: 0;
+        padding: 0;
     }
     .secao_dados{
-        display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        width: auto;
+        flex-direction: row;
     }
 
     .secao_dados h2{
         margin-top: 0;
     }
 
-    .secao_dados img{
+    .secao_dados > img{
        height: 150PX;
     }
 
