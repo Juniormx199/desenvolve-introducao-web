@@ -4,27 +4,25 @@ html{
 
 body{
     display: flex;
-    width: 75%;
     max-width: 1280px;
+    width: 80%;
     margin: auto;
 }
 
-
-img{
+header img{
     width: 150px;
+    border: solid rgba(165, 42, 42, 0.377) 4px ;
+    border-radius: 100px;
 }
 
 header{
     border-left: brown solid 40px ;
     margin-right: 70px;
-    padding: 20px;
-    background-color: rgb(243, 243, 243);
+    padding: 0 20px;
+    background-color: rgba(252, 99, 99, 0.103);
+    height: calc(100vh);
 }
 
-header h2{
-    border-bottom: solid brown 1px;
-    padding: 10px 0 ;
-}
 
 header p {
     margin: 15px 0;
@@ -32,17 +30,17 @@ header p {
 }
 
 section{
-    margin-top: 30px;
+    margin-top: 10px;
+}
+
+.line{
+    border-bottom: solid rgba(0, 0, 0, 0.116) 2px;
+    padding-bottom: 10px;
+    margin: 10px 0;
 }
 
 .secao_resumo h1{
     font-size: 2rem;
-}
-
-.secao_resumo h2{
-    border-bottom: solid rgba(165, 42, 42, 0.377) 2px;
-    padding-bottom: 10px;
-    margin: 30px 0;
 }
 
 .secao_resumo p {
@@ -50,16 +48,50 @@ section{
 }
 
 h2{
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .secao_educacao th{
     text-align: start;
 }
 
+.secao_experiencia tr{
+    display: flex;
+}
 
-.secao_educacao h2{
-    border-bottom: solid rgba(165, 42, 42, 0.377) 2px;
-    padding-bottom: 10px;
-    margin: 30px 0;
+.secao_experiencia th{
+    padding: 0 10px;
+}
+
+.secao_experiencia td{
+    text-align: justify;
+}
+
+.secao_habilidades ul{
+    padding-left: 50px;
+}
+
+@media all and (max-width: 768px){
+    body{
+        flex-direction: column;
+        width: 90%;
+    }
+    header{
+        height: auto;
+        margin-right: 0;
+    }
+    .secao_dados{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .secao_dados h2{
+        margin-top: 0;
+    }
+
+    .secao_dados img{
+       height: 150PX;
+    }
+
 }
