@@ -9,37 +9,41 @@ body{
     margin: auto;
 }
 
+h1,h2{
+    color: #201D73;
+}
+
 .secao_dados > img{
-    width: 150px;
-    border: solid rgba(165, 42, 42, 0.377) 4px ;
+    width: 180px;
+    border: solid #201D73 4px ;
     border-radius: 100px;
 }
 .container_dados img , .secao_redes img{
     width: 20px;
-    padding-right: 10px;
+    padding-right: 8px;
 }
 
 header{
-    border-left: brown solid 40px ;
-    margin-right: 40px;
-    padding: 0 10px;
-    background-color: rgba(252, 99, 99, 0.103);
+    border-left: #201D73 solid 40px ;
+    margin-right: 25px;
+    padding-top: 10px;
+    background-color: #201d732f;
     padding-bottom: calc(100vw - 100%);
 }
 
 header p {
-    margin: 15px 0;
-    font-size: 12px;
+    margin: 10px 0;
+    font-size: 14px;
 }
 
-section{
+h1{
     margin-top: 10px;
 }
 
 .line{
     border-bottom: solid rgba(0, 0, 0, 0.116) 2px;
-    padding-bottom: 10px;
-    margin: 10px 0;
+    padding-bottom: 5px;
+    margin: 20px 0;
 }
 
 .secao_resumo h1{
@@ -48,11 +52,9 @@ section{
 
 .secao_resumo p {
     text-indent: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h2{
-    font-weight: 400;
-}
 
 .secao_educacao th{
     text-align: start;
@@ -70,14 +72,16 @@ h2{
 
 .secao_experiencia th{
     padding-right : 30px;
+    text-align: center;
 }
 
 .secao_habilidades ul{
     padding-left: 30px;
+    margin-bottom: 15px;
 }
 
 .secao_dados{
-    width: 220px;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,7 +93,7 @@ h2{
 
 .container_experiencia ul{
     margin-left: 30px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .secao_redes a {
@@ -99,16 +103,52 @@ h2{
 
 .secao_redes {
     border-top: solid rgba(0, 0, 0, 0.116) 2px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.copy{
+    text-align: center;
     margin-top: 30px;
 }
 
+.menu{
+    position: sticky;
+    top: 0;
+    background-color: #201D73;
+}
 
+.menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.menu ul li{
+   list-style: none;
+   padding: 10px 0;
+}
+
+.menu ul li:hover{
+    background-color: #0800ff;
+ }
+
+.menu ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: #ffff;
+ }
+ 
 
 @media all and (max-width: 768px){
     body{
         flex-direction: column;
         width: 90%;
     }
+
+
     header{
         height: auto;
         margin-right: 0;
@@ -126,7 +166,26 @@ h2{
     }
 
     .secao_dados > img{
-       height: 150PX;
+       height: 150px;
+       width: 150px;
+       margin: 15px 0;
     }
 
+    .line{
+        margin: 5px 0;
+    }
+
+    .secao_resumo h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media print {
+    .menu{
+        display: none;
+    }
 }
