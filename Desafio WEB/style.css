@@ -1,0 +1,561 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-padding-top: 120px;
+}
+
+body{
+    background-color: #f8f9fa;
+    font-size: 14px;
+}
+
+a{
+    font-size: 1.3rem;
+}
+
+h1{
+    font-size: 2.2rem;
+}
+
+.sub-titulo{
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+
+main{
+    margin-top: 110px;
+}
+
+.container_principal{
+    margin: auto;
+    max-width: 1024px;
+    width: 90%;
+}
+
+nav img{
+    width: 130px;
+}
+
+.container_header{
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.container_nav{
+    width: 100%;
+    margin: auto auto;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lista_rotas{
+    list-style: none;
+    display: flex;
+ }
+
+ #lista_rotas li a{
+    text-decoration: none;
+    color: white;
+    padding: 50px 20px;
+ }
+
+ #lista_rotas li a:hover{
+    color: #FF6347;
+    font-size: 1.5rem;
+    transition: 0.5s
+ }
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container_carousel{
+    margin: auto auto;
+    max-width: 1024px;
+    width: 90%;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: auto;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.planos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.container_planos h1{
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(73, 73, 73);
+}
+
+.item_plano{
+    box-shadow: 2px 3px 3px rgba(5, 5, 5, 0.226);
+    width: 30%;
+    border: 1px solid black;
+    margin: 0 0.8%;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.plano_valor h3{
+    text-align: center;
+    margin-top: 7%;
+    font-size: 1.8em;
+    color: white;
+}
+
+.plano_valor{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #ff6347;
+    width: 90%;
+    height: 150px;
+    top: -8%;
+    left: 3%;
+    box-shadow: 5px 5px 5px rgba(5, 5, 5, 0.226);
+    padding: 5px;
+}
+
+.lista_plano{
+    list-style: none;
+    margin-top: -30px;
+}
+
+.lista_plano li{
+   padding: 10px;
+   font-weight: 600;
+   font-size: 1.3rem;
+   text-align: start;
+   display: flex;
+   align-items: center;
+}
+
+.lista_plano img{
+    margin-right: 10px;
+    width: 20px;
+}
+
+.container_planos{
+    display: flex;
+    flex-direction: column;
+}
+.container_planos button{
+    padding: 15px 60px;
+    color: white;
+    background-color: tomato;
+    font-size: 1.6em;
+    border-radius: 15px;
+    max-width: 300px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.container_planos button:hover{
+    background-color: rgb(255, 38, 0);
+    transition: 0.3s;
+}
+
+.informacao_modalidade{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem_modalidade{
+    width: 50%;
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fitdance {
+    background-image: url('imagens/fit.webp');
+    margin-right: 20px;
+}
+
+.pilates {
+    background-image: url('imagens/pilates.jpg');
+    margin-left: 20px;
+}
+
+.musculacao {
+    background-image: url('imagens/musculacao.png');
+    margin-right: 20px;
+}
+
+.cardio {
+    background-image: url('imagens/cardio.jpeg');
+    margin-left: 20px;
+}
+
+.item_modalidade {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.item_modalidade h2{
+   margin-bottom: 10px;
+}
+
+.container_modalidade h1{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(73, 73, 73);
+}
+
+.container_modalidade{
+    margin: 30px 0;
+}
+
+.container_sobre{
+    display: flex;
+    margin-top: 50px;
+}
+
+.imagem_sobre{
+    width: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: url('imagens/sobre.jpg') ;
+    background-size: cover;
+    margin-right: 20px; 
+}
+
+.inf_sobre {
+    width: 60%;
+}
+
+.inf_sobre p{
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.container_endereco{
+    display: flex;
+    margin-top: 30px;
+}
+
+.inf_endereco{
+    width: 80%;
+    margin-right: 30px;
+}
+
+.inf_endereco p{
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 1.5rem
+}
+
+.container_duvidas h1{
+    text-align: center;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(73, 73, 73);
+}
+
+.container_duvidas{
+    margin: 50px 0;
+    
+}
+
+.container_duvidas details {
+    margin-bottom: 20px;
+}
+
+.container_duvidas summary{
+    background-color: tomato;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 2%;
+    border-bottom: 2px solid black;
+}
+
+.container_duvidas p{
+   background-color: #282828;
+   color: white;
+   padding: 20px;
+}
+
+ footer{
+    background-color: black;
+    width: 100%;
+    padding: 40px 0;
+ }
+
+.container_footer{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1024px;
+    padding: 0 20px;
+}
+
+.contato_footer ul{
+    list-style: none;
+}
+
+.contato_footer ul li{
+    color: white;
+    margin-top: 10px;
+}
+
+.menu_footer a{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+
+.menu_footer a:hover{
+    color: #FF6347;
+    font-size: 1.5rem;
+    transition: 0.5s
+ }
+
+.menu_footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_footer h2{
+    color: #FF6347;
+}
+
+.container_footer li{
+    font-size: 1.4rem;
+}
+
+.direitos{
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+
+    html{
+        font-size: 12px;
+        scroll-padding-top: 185px;
+    }
+
+    main{
+        margin-top: 145px;
+    }
+
+    .container_nav{
+        flex-direction: column;
+    }
+
+    .container_nav img{
+        width: 120px;
+    }
+
+    #lista_rotas li{
+        padding: 10px;
+
+    }
+
+    #lista_rotas li a{
+        padding: 10px;
+  
+    }
+
+    #lista_rotas {
+       flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+    }
+
+    .imagem_sobre{
+        width: 100%;
+        height: 250px;
+        background: url('imagens/sobre2.jpg') ;
+        background-size: cover;
+        order: 1;
+        margin: 20px 0;
+    }
+
+    .container_carousel{
+        width: 98%;
+    }
+    
+    .carousel-slide img {
+        height: 300px;
+    }
+    
+    .planos{
+        flex-direction: column;
+        margin-top: 5px;
+        align-items: center;
+    }
+
+    .container_planos{
+        display: flex;
+        align-items: center;
+    }
+
+    .item_plano{
+        width: 90%;
+        margin: 10px 0 0 0;
+    }
+
+    .plano_valor{
+        flex-direction: column;
+        margin: auto auto;
+        position: static;
+        width: 90%;
+        height: 130px;
+        padding: 0px;
+    }
+
+    .lista_plano{
+        margin: 0;
+    }
+
+    .informacao_modalidade{
+        width: 100%;
+    }
+    
+    .imagem_modalidade{
+        width: 100%;
+        height: 220px;
+        margin: 10px 0 ;
+        background-position: top;
+    }
+    
+    .item_modalidade {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    .fitdance{
+        order: 1;
+    }
+
+    .musculacao{
+        order: 1;
+    }
+
+    .container_sobre{
+        flex-direction: column;
+    }
+
+    .imagem_sobre{
+        width: 100%;
+        height: 250px;
+        background: url('imagens/sobre2.jpg') ;
+        background-size: cover;
+        order: 1;
+        margin: 20px 0;
+    }
+    
+    .inf_sobre{
+        width: 100%;
+    }
+
+    .container_endereco{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .inf_endereco h1{
+       text-align: center;
+    }
+
+    .inf_endereco p{
+        text-align: justify;
+     }
+
+    .inf_endereco{
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .contato_footer{
+        text-align: center;
+    }
+
+    .container_footer{
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 615px) {
+main {
+    margin-top: 190px;
+}
+}
